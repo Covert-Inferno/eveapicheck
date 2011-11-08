@@ -129,21 +129,16 @@ jQuery(function($) {
 		var loader = $("#loadLogin").show(),
 			button = $("#doLogin").hide();
 
-		$.ajax({
-			  type: 'POST',
-			  url: baseURL + "status",
-			  data: {login: $("#loginId").val()},
-			  success: function(data) {
-					if (data.login === true) {
-						$("#login").hide();
-						$("#sections, #check").show();
-					}
-					else {
-						$("#login").append('<span class="error">Unable to login, please try again</span>');
-					}
-				},
-			  dataType: 'json'
-		 }).complete(function() {
+		$.post(baseURL + "status", {login: $("#loginId").val()}, function(data) {
+			if (data.login === true) {
+				$("#login").hide();
+				$("#sections, #check").show();
+			}
+			else {
+				$("#login").append('<span class="error">Unable to login, please try again</span>');
+			}
+		},
+		'json').complete(function() {
 				loader.hide();
 				button.show();
 		 });
