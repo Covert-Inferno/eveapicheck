@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>API Check</title>
+<!-- <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/redmond/jquery-ui.css">  -->
+<link rel="stylesheet" type="text/css" href="main.css">
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .important, .important:hover, .access-list .no-access, .access-list .access {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>  -->
+<script type="text/javascript" src="main.js"></script>
+
+</head>
+<body>
+<div class="outer-wrapper">
+	<hgroup class="title">
+		<h1>API Check</h1>
+	</hgroup>
+	<div class="inner-wrapper">
+		<section id="sections">
+				<a class="button main important" href="#" id="checkView">Check new keys</a>
+				<a class="button main" href="#" id="recentView">Recent checks</a>
+		</section>
+		
+		<section id="login">
+			<h1>Please enter your Login ID</h1>
+			<input type="text" id="loginId">
+			<input type="button" value="Login" id="doLogin">
+			<span class="loader" id="loadLogin">Checking ...</span>
+		</section>
+		
+		<section id="check">
+			<h1>Enter credentials to check</h1>
+			<fieldset>
+				<input type="text" id="keyId" placeholder="Key ID">
+				<input type="text" id="vCode" placeholder="Verification Code">
+				<input type="button" value="Check" id="doCheck">
+				<span class="loader" id="loadCheck">Checking ...</span>
+			</fieldset>
+		
+			<div id="checkResult">
+				
+			</div>		
+		</section>
+		
+		<section id="recentChecks">
+			<table id="recentList"></table>
+		</section>
+	</div>
+</div>
+
+</body>
+</html>
