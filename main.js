@@ -10,7 +10,7 @@ var Apicheck = {};
 
 jQuery(function($) {
 
-	var baseURL = 'request.php?action=';
+	var baseURL = location.href.replace(/[^\/]*$/, 'request.php?action=');
 	$("#sections, #check, #recentChecks, #login, #loadLogin, #loadCheck, #checkResult").hide();
 
 	Apicheck.loadRecent = function(keyID, vCode) {
