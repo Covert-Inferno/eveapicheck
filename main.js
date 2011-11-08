@@ -1,3 +1,10 @@
+/*
+	Copyright (c) 2011, Georg Großberger (georg@grossberger.at>
+	All rights reserved.
+
+	Licensed under the terms of the Modified BSD License
+	http://www.opensource.org/licenses/BSD-3-Clause
+*/
 
 var Apicheck = {};
 

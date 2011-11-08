@@ -1,4 +1,11 @@
 <?php
+/*
+	Copyright (c) 2011, Georg Großberger (georg@grossberger.at>
+	All rights reserved.
+
+	Licensed under the terms of the Modified BSD License
+	http://www.opensource.org/licenses/BSD-3-Clause
+*/
 
 $error = array();
 $success = array();
@@ -153,6 +160,15 @@ CREATE TABLE IF NOT EXISTS `users` (
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="copyright" content="2011 by Georg Großberger (georg@grossberger.at)">
+<meta name="license" content="Modified BSD License (http://www.opensource.org/licenses/BSD-3-Clause)">
+<!--
+	Copyright (c) 2011, Georg Großberger (georg@grossberger.at>
+	All rights reserved.
+
+	Licensed under the terms of the Modified BSD License
+	http://www.opensource.org/licenses/BSD-3-Clause
+-->
 <title>API Check</title>
 <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/redmond/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="main.css">
